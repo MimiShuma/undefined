@@ -1,0 +1,29 @@
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #F8F9F9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+div {
+    display: inline-block;
+}
+
+.logo {
+width: 60%;
+text-align: center;
+}
+
+
+.icon {
+width: 7%;
+text-align: right;
+}
+
+.texts {
+    width: 9%;
+}
+
