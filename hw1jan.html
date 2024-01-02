@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using js only</title>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+    <button onclick="displayHeader()">Display Header</button>
+    <script>
+        function displayHeader() {
+            let ul = document.createElement('UL');
+            ul.setAttribute('id', 'navbar');
+            ul.style.cssText = "background-color: azure;";
+
+            let li5 = document.createElement('LI');
+            let txt5 = document.createTextNode("Sign Up");
+            let img = document.createElement('IMG');
+            img.src = "assets/images/pondit.webp";
+            img.style.cssText = "text-decoration:none;";
+            li5.style.cssText = "display:inline; padding-left: 10px;";
+            img.appendChild(txt5);
+            li5.appendChild(img);
+            ul.appendChild(li5);
+
+            let li = document.createElement('LI');
+            let txt = document.createTextNode("Home");
+            let a = document.createElement('A');
+            a.href = "https://google.com";
+            a.style.cssText = "text-decoration: none; padding-left: 500px; vertical-align: middle;";
+            li.style.cssText = "display:inline;";
+            a.appendChild(txt);
+            li.appendChild(a);
+            ul.appendChild(li);
+
+            let li1 = document.createElement('LI');
+            let txt1 = document.createTextNode("About Us");
+            let a1 = document.createElement('A');
+            a1.href = "https://google.com";
+            a1.style.cssText = "text-decoration: none; padding-left: 100px;";
+            li1.style.cssText = "display:inline;";
+            a1.appendChild(txt1);
+            li1.appendChild(a1);
+            ul.appendChild(li1);
+
+            let li2 = document.createElement('LI');
+            let txt2 = document.createTextNode("Contact Us");
+            let a2 = document.createElement('A');
+            a2.href = "https://google.com";
+            a2.style.cssText = "text-decoration:none; padding-left: 100px;";
+            li2.style.cssText = "display:inline;";
+            a2.appendChild(txt2);
+            li2.appendChild(a2);
+            ul.appendChild(li2);
+
+            let li3 = document.createElement('LI');
+            let txt3 = document.createTextNode("Sign In");
+            let a3 = document.createElement('A');
+            a3.href = "https://google.com";
+            a3.style.cssText = "text-decoration:none; padding-left: 100px;";
+            li3.style.cssText = "display:inline;";
+            a3.appendChild(txt3);
+            li3.appendChild(a3);
+            ul.appendChild(li3);
+
+            let li4 = document.createElement('LI');
+            let txt4 = document.createTextNode("Sign Up");
+            let a4 = document.createElement('A');
+            a4.href = "https://google.com";
+            a4.style.cssText = "text-decoration:none; padding-left: 100px;";
+            li4.style.cssText = "display:inline;";
+            a4.appendChild(txt4);
+            li4.appendChild(a4);
+            ul.appendChild(li4);
+
+            let container = document.getElementById('container');
+            container.appendChild(ul);
+            //document.querySelector('container ul li');
+            console.log(container);
+        }
+    </script>
+</body>
+
+</html>

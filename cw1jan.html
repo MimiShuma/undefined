@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        /* *{
+            display:none;
+        } */
+        #container {
+            /* background-color:red; */
+            border-bottom: 1px solid red;
+        }
+
+        #container2 {
+            /* background-color:red; */
+            border: 1px solid rgb(72, 0, 255);
+        }
+
+        #container>.navbar>li {
+            display: inline;
+            border: 1px solid blue;
+        }
+
+        li {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+
+        .limitless {}
+
+        .metronic {}
+
+        .pipilika {}
+
+        .pl-5 {
+            padding-left: 5%;
+        }
+
+        /* #navbar {
+            background-color: azure;
+        }
+           ul>li {
+            display: inline;
+            vertical-align: middle;
+        }
+        li>a {
+            text-decoration: none;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <ul class="navbar">
+            <li class="pl-5 pipilika">Home </li>
+            <li class="pl-5 metronic">About Us </li>
+            <li class="pl-5 metronic pipilika">Contact Us</li>
+            <li class="pl-5 limitless">Sign In</li>
+            <li class="pl-5 limitless pipilika">Sign Up</li>
+        </ul>
+    </div>
+    <!-- <hr /> -->
+    <div id="container2">
+
+    </div>
+    <button onclick="displayHeader()">Display Header</button>
+    <script>
+        function displayHeader() {
+            let ul = document.createElement('UL');
+            ul.setAttribute('id', 'navbar2');
+
+            let li = document.createElement('LI');
+            let txt = document.createTextNode("Home");
+            li.appendChild(txt);
+            ul.appendChild(li);
+
+            let li1 = document.createElement('LI');
+            let txt1 = document.createTextNode("About Us");
+            li1.appendChild(txt1);
+            ul.appendChild(li1);
+
+            let li2 = document.createElement('LI');
+            let txt2 = document.createTextNode("Contact Us");
+            li2.appendChild(txt2);
+            ul.appendChild(li2);
+
+            let li3 = document.createElement('LI');
+            let txt3 = document.createTextNode("Sign In");
+            li3.appendChild(txt3);
+            ul.appendChild(li3);
+
+
+            //let container2 = document.getElementById('container2');
+            container2.appendChild(ul);
+            //document.getElementById("navbar2").style.display = "inline";
+            document.querySelector('#container2 ul li').style.display = "inline";
+            document.querySelector('.li1').style.display = "inline";
+            console.log(container2);
+        }
+
+
+
+        function createLI() {
+
+        }
+
+        function createText() {
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <ul id="navbar">
+            <li>
+                <img src="assets/img/pondit_logo.png" height="50px" alt="">
+            </li>
+            <li class="pl-10">
+                Home
+            </li>
+            <li class="pl-5">
+                About Us
+            </li>
+            <li class="pl-5">
+                Contact Us
+            </li>
+            <li class="pl-30">
+                Sign In
+            </li>
+            <li class="pl-5">
+                Sign Up
+            </li>
+            <li class="pl-10">
+                <button onclick="changeMode()">Mode</button>
+            </li>
+        </ul>
+    </div> -->
+
+    <!-- <script>
+        function changeMode()
+        {
+            window.document.getElementById('navbar').style.color = "yellow";
+            window.document.getElementById('navbar').style.backgroundColor = "black";
+        }
+    </script> -->
+</body>
+
+</html>

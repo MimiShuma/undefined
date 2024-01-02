@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="container">
+        <li>List Item 1</li>
+    </ul>
+    <button id="button" onclick="addNewItem()">Add Item</button>
+
+    <script>
+        function addNewItem() {
+            let listItem = window.document.getElementById('container').innerHTML;
+            //console.log(listItem);
+            //document.getElementById('list').innerHTML = listItem + 'List Item 2';
+            let li = document.createElement('LI');
+            let txt = document.createTextNode(' List Item 2');
+            let newItem = li.appendChild(txt);
+            //alert(window.document.getElementById('container').innerHTML.appendChild(li));
+            window.document.getElementById('container').appendChild(newItem);
+        }
+    </script>
+</body>
+
+</html>
