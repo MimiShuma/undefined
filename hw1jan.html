@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar using js only</title>
+    <style>
+        #container {
+            background-color: yellow;
+        }
+    </style>
 </head>
 
 <body>
+
     <div id="container">
 
     </div>
+
     <button onclick="displayHeader()">Display Header</button>
     <script>
         function displayHeader() {
             let ul = document.createElement('UL');
             ul.setAttribute('id', 'navbar');
-            ul.style.cssText = "background-color: azure;";
+            ul.style.cssText = "background-color: azure; vertical-align : middle;";
 
             let li5 = document.createElement('LI');
             let txt5 = document.createTextNode("Sign Up");
@@ -32,8 +39,8 @@
             let txt = document.createTextNode("Home");
             let a = document.createElement('A');
             a.href = "https://google.com";
-            a.style.cssText = "text-decoration: none; padding-left: 500px; vertical-align: middle;";
-            li.style.cssText = "display:inline;";
+            a.style.cssText = "text-decoration: none; padding-left: 500px; ";
+            li.style.cssText = "display:inline; ";
             a.appendChild(txt);
             li.appendChild(a);
             ul.appendChild(li);
@@ -78,10 +85,13 @@
             li4.appendChild(a4);
             ul.appendChild(li4);
 
-            let container = document.getElementById('container');
+
+            const container = document.getElementById('container');
             container.appendChild(ul);
             //document.querySelector('container ul li');
             console.log(container);
+            //container.style.cssText = "vertical-align : middle";
+            //container.style.verticalAlign = "middle";
         }
     </script>
 </body>

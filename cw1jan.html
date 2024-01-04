@@ -29,11 +29,18 @@
             margin-block-end: 0em;
         }
 
-        .limitless {}
 
-        .metronic {}
+        .pipilika {
+            font-size: 5px;
+        }
 
-        .pipilika {}
+        .metronic {
+            font-size: 20px;
+        }
+
+        .limitless {
+            font-size: 50px;
+        }
 
         .pl-5 {
             padding-left: 5%;
@@ -55,19 +62,17 @@
 <body>
     <div id="container">
         <ul class="navbar">
-            <li class="pl-5 pipilika">Home </li>
-            <li class="pl-5 metronic">About Us </li>
-            <li class="pl-5 metronic pipilika">Contact Us</li>
+            <li class="pl-5 pipilika">Home</li>
+            <li class="pl-5 metronic">About Us</li>
+            <li class="pl-5 pipilika limitless metronic">Contact Us</li>
             <li class="pl-5 limitless">Sign In</li>
-            <li class="pl-5 limitless pipilika">Sign Up</li>
+            <li class="pl-5 limitless metronic">Sign Up</li>
         </ul>
     </div>
-    <!-- <hr /> -->
-    <div id="container2">
-
+    <!-- <div id="container2">
     </div>
     <button onclick="displayHeader()">Display Header</button>
-    <script>
+     <script>
         function displayHeader() {
             let ul = document.createElement('UL');
             ul.setAttribute('id', 'navbar2');
@@ -111,24 +116,9 @@
 
         }
 
-    </script>
+    </script> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="container">
+     <div class="container">
         <ul id="navbar">
             <li>
                 <img src="assets/img/pondit_logo.png" height="50px" alt="">
@@ -152,9 +142,8 @@
                 <button onclick="changeMode()">Mode</button>
             </li>
         </ul>
-    </div> -->
-
-    <!-- <script>
+    </div>
+     <script>
         function changeMode()
         {
             window.document.getElementById('navbar').style.color = "yellow";
