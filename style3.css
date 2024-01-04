@@ -4,7 +4,10 @@ body {
     padding: 0;
 }
 
-
+header {
+    margin: 0;
+    padding: 0;
+}
 
 #row1 {
     background-color: #ffba00;
@@ -14,16 +17,9 @@ ul li {
     display: inline-block;
 }
 
-#row1 ul {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .txtAlert {
     text-align: left;
-    padding: 10px 0px 10px 570px;
+    padding: 10px 0px 10px 530px;
     width: 700px;
 }
 
@@ -39,7 +35,6 @@ ul li {
 
 #row3 .inputSearchbtn {
     width: 450px;
-    display: inline-block;
 
 }
 
@@ -73,7 +68,6 @@ ul li {
 }
 
 #row3 a {
-    display: inline-block;
     width: 20px;
     text-decoration: none;
     color: black;
